@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,79 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body
+{
+  font-family: 'poppins';
+}
+
+#loginBox
+{
+  background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: left;
+    width: 460px;
+    height: 450px;
+    border: solid 1px white;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px lightgray, 3px -3px rgb(235, 235, 235), -3px 3px rgb(235, 235, 235), -3px -3px rgb(235, 235, 235);;
+}
+
+.top-right-text {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.9rem;
+  color: #007bff;
+}
+.fff
+{
+  color: #1DC365;
+}
+
+#textBox
+{
+  padding: 10px;
+  border: none;
+  background-color: #dae7ef;
+  border-radius: 10px;
+  width: 430px;
+  height: 27px;
+  margin-top: 4px;
+}
+
+#button
+{
+  color: white;
+  width: 450px;
+  height: 55px;
+  border: white;
+  border-radius: 10px;
+  background: linear-gradient(to left, #1DC365, #12ACE2);
+  font-size: 1.5rem;
+}
+
+#greenText
+{
+  color: #1DC365;
+  font-size: 0.9rem;
+}
+#blueText
+{
+  color: #12ACE2;
+  line-height: 0.25em;
+  font-size: 2.5rem;
+
+}
+#blueTextSmall
+{
+  color: #12ACE2;
+  line-height: 0.1em;
+  font-size: 1.4rem;
+  text-align: left;
 }
