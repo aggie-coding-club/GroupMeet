@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
+import Icon from '@mdi/react';
 import './App.css';
+import { mdiAccount } from '@mdi/js'
 
 function App() {
   return (
@@ -16,14 +18,17 @@ function App() {
           <div className="input_container">
             Name 
             <input className="input_box"></input>
+            <img src="account-outline.svg" width="50" className="input_icon"></img>
           </div>
           <div className="input_container">
             Email
             <input className="input_box"></input>
+            <img src="email-outline.svg" width="50"></img>
           </div>
           <div className="input_container">
             Password
             <input className="input_box"></input>
+            <img src="key.svg" width="50"></img>
           </div>
           <button className="pfp_box">Upload Profile Picture</button>
           <button className="sign_up_box">Sign Up</button>
