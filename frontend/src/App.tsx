@@ -5,19 +5,29 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.      
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src="GroupMeet.png" width="320"></img>
+        <div className="container">
+          <div className="title"> Sign Up </div>
+          <p>Welcome to GroupMeet! This is a platform for setting meeting times</p>
+          <div className="input_container">
+            Name 
+            <input className="input_box"></input>
+          </div>
+          <div className="input_container">
+            Email
+            <input className="input_box"></input>
+          </div>
+          <div className="input_container">
+            Password
+            <input className="input_box"></input>
+          </div>
+          <button className="pfp_box">Upload Profile Picture</button>
+          <button className="sign_up_box">Sign Up</button>
+        </div>
       </header>
     </div>
   );
