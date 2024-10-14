@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lalezar:wght@400&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Container for the whole app */
+.app-container {
+    display: flex;
+    height: 100vh;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  
+  /* Sidebar for Friends and Groups */
+  .sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-size: 18px;                /* Font size for friend's name */
+    color: #57c6b1;                    /* Dark gray color for text */
+    transition: color 0.3s; 
+    text-align: left;        /* Smooth transition for hover effect */
+    font-family: 'Lalezar';  
+    
+  }
+  
+  /* Friends section styling */
+.friends-list {
+    margin-bottom: 20px;
+  }
+  
+  .friend-item {
+    display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin-bottom: 10px;
+  justify-content: space-between; /* Distributes space between the items */
+  padding: 10px;                 /* Padding inside the square */
+  border-radius: 8px;            /* Slightly rounded corners */
+  background-color: #e2e2e2;     /* Light gray background color */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  background-image: -moz-linear-gradient(center bottom, rgb(112, 112, 112), rgb(0, 193, 236));
+  padding: 2px;
+  border-width: 2px;
+  border-style: solid;
 
-.App-link {
-  color: #61dafb;
-}
+  }
+  
+  .friend-item input {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .friend-avatar {
+    width: 36px;        /* Circular avatar width */
+    height: 36px;       /* Circular avatar height */
+    border-radius: 50%; /* Make the avatar circular */
+    object-fit: cover;  /* Ensures the image fits and maintains aspect ratio */
+    margin-right: 10px;
+    border-width: 2px;
+    border-style: solid;   
+    color: #b0b0b0; 
+  }
+  
+  .friend-item span {
+    font-size: 25px;                /* Font size for friend's name */
+    color: #7a7a7a;                    /* Dark gray color for text */
+    transition: color 0.3s; 
+    text-align: center;        /* Smooth transition for hover effect */
+    font-family: 'Lalezar';       
+  }
+  
+  .friend-item:hover span {
+    color: #048872;                 /* Change color on hover */
+  }
+  .friends-list {
+    margin-bottom: 20px;
+  }
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+  .group-item {
+    display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between; /* Distributes space between the items */
+  padding: 10px;                 /* Padding inside the square */
+  border-radius: 8px;            /* Slightly rounded corners */
+  background-color: #e2e2e2;     /* Light gray background color */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  background-image: -moz-linear-gradient(center bottom, rgb(112, 112, 112), rgb(0, 193, 236));
+  padding: 2px;
+  border-width: 2px;
+  border-style: solid;
+
   }
-  to {
-    transform: rotate(360deg);
+  
+  .group-item input {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
   }
-}
+  
+  .group-avatar {
+    width: 36px;        /* Circular avatar width */
+    height: 36px;       /* Circular avatar height */
+    border-radius: 50%; /* Make the avatar circular */
+    object-fit: cover;  /* Ensures the image fits and maintains aspect ratio */
+    margin-right: 10px;
+    border-width: 2px;
+    border-style: solid;   
+    color: #b0b0b0; 
+  }
+  
+  .group-item span {
+    font-size: 25px;                /* Font size for friend's name */
+    color: #7a7a7a;                    /* Dark gray color for text */
+    transition: color 0.3s; 
+    text-align: center;        /* Smooth transition for hover effect */
+    font-family: 'Lalezar';       
+  }
+  
+  .group-item:hover span {
+    color: #048872;                 /* Change color on hover */
+  }
+  /* Main content area */
+  .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Top-right buttons */
+  .top-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .menu-button, .bell-button, .add-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .menu-button img, .bell-button img, .add-button img{
+    width: 24px;
+    height: 24px;
+  }
+
+  .invite-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .invite-button img {
+    width: 96px;
+    height: 24px;
+  }
+  
+  /* Placeholder for the calendar */
+  .calendar {
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 18px;
+  }
+  
