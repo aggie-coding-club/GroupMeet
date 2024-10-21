@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './gmlogo.webp';
 import logo2 from './homephoto.webp'
 import './App.css';
+import Icon from '@mdi/react';
+import { mdiChevronRight } from '@mdi/js';
 
 function App() {
   return (
@@ -25,13 +27,16 @@ function App() {
       </header>
 
       <div className="App-body">
-        <div className="App-text">
-          <h1>
-            Modern Way of Scheduling
-          </h1>
-          <p className= 'App-discription'>
-            GroupMeet allows you to schedule and meet with your favorite groups.
-          </p>  
+        <div className="App-left">
+          <div className="App-text">
+            <h1>
+              Modern Way of Scheduling
+            </h1>
+            <p className= 'App-discription'>
+              GroupMeet allows you to schedule and meet with your favorite groups.
+            </p>  
+          </div>
+          <button className="SignUpMain">Sign Up<Icon path={mdiChevronRight} size={1.5}/></button>
         </div>
         <img src={logo2} className="App-logo2" alt="logo2" />
       </div>

@@ -2,6 +2,27 @@
   text-align: center;
 }
 
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.App-header {
+  background-color: white;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end; 
+  font-size: calc(10px + 2vmin);
+  color: #1DC365;
+  position: relative;
+  padding: 0px 20px; 
+}
+
 .App-logo {
   height: 20vmin;
   position: absolute; 
@@ -10,85 +31,85 @@
   pointer-events: none;
 }
 
-.App-logo2 {
-  height: 80vmin;
-  justify-self: flex-end;
-  align-self: flex-end;
-  margin-left: auto;
-  pointer-events: none;
-}
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-.App-header {
-  background-color: white;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color:  #1DC365;
-  position: relative;
-}
-
-.SignUp {
-  background-color: #04AA6D; /* Green */
+.SignUp, .Login {
+  background-color: #04AA6D;
   border: none;
   color: rgb(255, 255, 255);
-  padding: 12px 18px;
-  text-align: flex-end;
+  padding: 10px 35px;
   border-radius: 12px;
   background-image: linear-gradient(to right, #1DC365, #12ACE2);
   font-size: 20px;
+  margin-left: 0px; 
+  margin-right: 50px;
+  margin-top: -50px;
 }
 
-.Login {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 12px 18px;
-  text-align: flex-end;
-  justify-self: flex-end;
-  align-self: flex-end;
-  border-radius: 12px;
-  background-image: linear-gradient(to right, #1DC365, #12ACE2);
-  font-size: 20px;
-}
 
 .App-body {
   background-color: white;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  /* justify-content: space-between;  */
+  /* flex-direction: row; */
+  /* align-items: center;
+  justify-content: flex-start; */
   font-size: calc(10px + 2vmin);
   color:  #1DC365;
-  position: relative;
+  /* position: relative; */
+}
+
+.App-left {
+  align-items: center;
+  
 }
 
 .App-text {
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  left: 50px;
-  margin-bottom: 100px;
-  font-size: calc(10px + 2vmin);
+  /* align-items: center;
+  justify-content: flex-end; */
+  /* position: relative; */
+  /* left: 50px; */
+  /* margin-bottom: 100px; */
+  /* font-size: calc(10px + 2vmin); */
   color:  #1DC365;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
   position: relative;
+}
+
+.SignUpMain {
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  background-image: linear-gradient(to right, #1DC365, #12ACE2);
+  font-size: 20px;
 }
 
 .App-discription {
   color:  #12ACE2;
-  margin-bottom: 20px;
+  margin-top: -30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
   font-size: calc(10px + 1vmin)
+}
+
+.App-logo2 {
+  height: 95vmin;
+  clip-path: inset(0 120px 0 0);
+  /* justify-self: center; */
+  /* align-self: center; */
+  /* margin-left: auto; */
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+  right: -120px;
+  pointer-events: none;
 }
 
 /* .App-link {
