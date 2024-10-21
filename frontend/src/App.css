@@ -1,172 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Lalezar:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Container for the whole app */
 .app-container {
     display: flex;
     height: 100vh;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+
+/* Sidebar for Friends and Groups */
+.sidebar {
+    width: 20%;
+    background-color: #fdfdfd;
+    font-size: 18px;
+    text-align: left;
+    overflow-y: scroll;
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d3d3d4;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b2b2b3;
   }
 
-  
-  /* Sidebar for Friends and Groups */
-  .sidebar {
-    width: 20%;
-    background-color: #f0f0f0;
-    padding: 20px;
-    font-size: 18px;                /* Font size for friend's name */
-    color: #57c6b1;                    /* Dark gray color for text */
-    transition: color 0.3s; 
-    text-align: left;        /* Smooth transition for hover effect */
-    font-family: 'Lalezar';  
-    
-  }
-  
-  /* Friends section styling */
+/* Insert groupmeet logo here*/
+
+.friend-header, .group-header {
+    margin-left: .5vw;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.friend-header {
+    color: #13ace2;
+}
+
+.group-header {
+    position: relative;
+    height: auto;
+    color: #03c15e;
+}
+
+.friend-list, .group-list {
+    margin-right: .5vw;
+    margin-left: .5vw;
+}
+
+.friend-item, .group-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d3d3d3;
+    justify-content: space-between;
+    height: 30px;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.friend-item input[type="checkbox"], .group-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;    
+    height: 20px;
+    border: 1.5px solid #797979;
+    background-color: #ffffff;
+    cursor: pointer;
+    position: relative;
+}
+
+.friend-item input[type="checkbox"]:checked::before,.group-item input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 10px;
+    border-right: 2px solid #797979;
+    border-bottom: 2px solid #797979;
+    transform: rotate(45deg);
+}
+
+.friend-avatar, .group-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #d9d9d9;
+}
+
+.friend-item span, .group-item span{
+    font-size: 18px;
+    color: #787878;
+    text-align: center;
+}
+
+.friend-item:hover, .group-item:hover {
+    background-image: linear-gradient(to right, #12ACE2, #1DC365);
+}
+.friend-item:hover span, .group-item:hover span {
+    color: #ffffff
+}
+
 .friends-list {
     margin-bottom: 20px;
-  }
-  
-  .friend-item {
-    display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  justify-content: space-between; /* Distributes space between the items */
-  padding: 10px;                 /* Padding inside the square */
-  border-radius: 8px;            /* Slightly rounded corners */
-  background-color: #e2e2e2;     /* Light gray background color */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-  background-image: -moz-linear-gradient(center bottom, rgb(112, 112, 112), rgb(0, 193, 236));
-  padding: 2px;
-  border-width: 2px;
-  border-style: solid;
-
-  }
-  
-  .friend-item input {
-    margin-right: 10px;
-    width: 24px;
-    height: 24px;
-  }
-  
-  .friend-avatar {
-    width: 36px;        /* Circular avatar width */
-    height: 36px;       /* Circular avatar height */
-    border-radius: 50%; /* Make the avatar circular */
-    object-fit: cover;  /* Ensures the image fits and maintains aspect ratio */
-    margin-right: 10px;
-    border-width: 2px;
-    border-style: solid;   
-    color: #b0b0b0; 
-  }
-  
-  .friend-item span {
-    font-size: 25px;                /* Font size for friend's name */
-    color: #7a7a7a;                    /* Dark gray color for text */
-    transition: color 0.3s; 
-    text-align: center;        /* Smooth transition for hover effect */
-    font-family: 'Lalezar';       
-  }
-  
-  .friend-item:hover span {
-    color: #048872;                 /* Change color on hover */
-  }
-  .friends-list {
-    margin-bottom: 20px;
-  }
-  
+}
 
 
-  .group-item {
-    display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  justify-content: space-between; /* Distributes space between the items */
-  padding: 10px;                 /* Padding inside the square */
-  border-radius: 8px;            /* Slightly rounded corners */
-  background-color: #e2e2e2;     /* Light gray background color */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-  background-image: -moz-linear-gradient(center bottom, rgb(112, 112, 112), rgb(0, 193, 236));
-  padding: 2px;
-  border-width: 2px;
-  border-style: solid;
-
-  }
-  
-  .group-item input {
-    margin-right: 10px;
-    width: 24px;
-    height: 24px;
-  }
-  
-  .group-avatar {
-    width: 36px;        /* Circular avatar width */
-    height: 36px;       /* Circular avatar height */
-    border-radius: 50%; /* Make the avatar circular */
-    object-fit: cover;  /* Ensures the image fits and maintains aspect ratio */
-    margin-right: 10px;
-    border-width: 2px;
-    border-style: solid;   
-    color: #b0b0b0; 
-  }
-  
-  .group-item span {
-    font-size: 25px;                /* Font size for friend's name */
-    color: #7a7a7a;                    /* Dark gray color for text */
-    transition: color 0.3s; 
-    text-align: center;        /* Smooth transition for hover effect */
-    font-family: 'Lalezar';       
-  }
-  
-  .group-item:hover span {
-    color: #048872;                 /* Change color on hover */
-  }
-  /* Main content area */
-  .content {
+/* Main content area */
+.content {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     position: relative;
-  }
-  
-  /* Top-right buttons */
-  .top-buttons {
+}
+
+/* Top-right buttons */
+.top-buttons {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;
-  }
-  
-  .menu-button, .bell-button, .add-button {
+}
+
+.menu-icon,
+.bell-icon,
+.add-icon {
     background-color: transparent;
     border: none;
-    padding: 10px;
     cursor: pointer;
-  }
-  
-  .menu-button img, .bell-button img, .add-button img{
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
+    color: #31b8e6;
+}
+
+.menu-button,
+.bell-button,
+.add-button  {
+    background-color: transparent;
+    border-color: transparent;
+    width: 32px;
+    height: 32px;    
+    padding: 0;
+}
+
+.invite-button {
+    font-size: 85%;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #12ACE2, #1DC365);
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 90px;
+    height: 28px;
+    transition: .3ss;
   }
 
-  .invite-button {
-    background-color: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  .invite-button img {
-    width: 96px;
-    height: 24px;
-  }
-  
-  /* Placeholder for the calendar */
-  .calendar {
+
+/* Placeholder for the calendar */
+.calendar {
     flex-grow: 1;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     text-align: center;
     font-size: 18px;
-  }
+}
