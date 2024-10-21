@@ -8,6 +8,11 @@
     font-weight: 600;
 }
 
+.logo {
+    height: 8em;
+    margin: auto;
+    display: block;
+}
 
 /* Sidebar for Friends and Groups */
 .sidebar {
@@ -16,30 +21,31 @@
     font-size: 18px;
     text-align: left;
     overflow-y: scroll;
-
 }
+
 ::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #d3d3d4;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #b2b2b3;
-  }
+}
 
 /* Insert groupmeet logo here*/
 
-.friend-header, .group-header {
+.friend-header,
+.group-header {
     margin-left: .5vw;
     font-size: 18px;
     font-weight: 600;
@@ -55,12 +61,14 @@
     color: #03c15e;
 }
 
-.friend-list, .group-list {
+.friend-list,
+.group-list {
     margin-right: .5vw;
     margin-left: .5vw;
 }
 
-.friend-item, .group-item {
+.friend-item,
+.group-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -71,11 +79,12 @@
     background-color: #f7f7f7;
 }
 
-.friend-item input[type="checkbox"], .group-item input[type="checkbox"] {
+.friend-item input[type="checkbox"],
+.group-item input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 20px;    
+    width: 20px;
     height: 20px;
     border: 1.5px solid #797979;
     background-color: #ffffff;
@@ -83,7 +92,8 @@
     position: relative;
 }
 
-.friend-item input[type="checkbox"]:checked::before,.group-item input[type="checkbox"]:checked::before {
+.friend-item input[type="checkbox"]:checked::before,
+.group-item input[type="checkbox"]:checked::before {
     content: "";
     position: absolute;
     top: 2px;
@@ -95,7 +105,8 @@
     transform: rotate(45deg);
 }
 
-.friend-avatar, .group-avatar {
+.friend-avatar,
+.group-avatar {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -103,16 +114,20 @@
     background-color: #d9d9d9;
 }
 
-.friend-item span, .group-item span{
+.friend-item span,
+.group-item span {
     font-size: 18px;
     color: #787878;
     text-align: center;
 }
 
-.friend-item:hover, .group-item:hover {
+.friend-item:hover,
+.group-item:hover {
     background-image: linear-gradient(to right, #12ACE2, #1DC365);
 }
-.friend-item:hover span, .group-item:hover span {
+
+.friend-item:hover span,
+.group-item:hover span {
     color: #ffffff
 }
 
@@ -150,11 +165,11 @@
 
 .menu-button,
 .bell-button,
-.add-button  {
+.add-button {
     background-color: transparent;
     border-color: transparent;
     width: 32px;
-    height: 32px;    
+    height: 32px;
     padding: 0;
 }
 
@@ -170,7 +185,7 @@
     width: 90px;
     height: 28px;
     transition: .3ss;
-  }
+}
 
 
 /* Placeholder for the calendar */
