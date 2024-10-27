@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -59,8 +63,23 @@ button {
 }
 
 .input_icon {
+  margin-left: 10px;
   margin-bottom: 10px;
   position: absolute;
+}
+
+.input_icon#key_icon{
+  margin-left: 10px;
+}
+
+#eye_icon {
+  position: relative;
+  margin-left: 0px;
+  right: 50px
+}
+
+svg{
+  color: blue;
 }
 
 .input_box{
@@ -73,6 +92,15 @@ button {
   width: 400px;
   height: 55px;
 }
+
+.input_box_wrapper{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
 
 .pfp_box{
   background-color: rgb(222, 219, 219);
@@ -107,6 +135,8 @@ p{
   font-size: .6em;
   margin: 10px 25px;
 }
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -114,4 +144,8 @@ p{
   to {
     transform: rotate(360deg);
   }
+}
+
+#pwd_input_wrapper{
+  right: -20px;
 }

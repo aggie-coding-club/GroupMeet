@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Icon from '@mdi/react';
 import './App.css';
 import { mdiAccount } from '@mdi/js'
+import SignUp from './SignUp'
 
 function App() {
   return (
@@ -17,18 +18,25 @@ function App() {
           <p>Welcome to GroupMeet! This is a platform for setting meeting times</p>
           <div className="input_container">
             Name 
-            <input className="input_box"></input>
-            <img src="account-outline.svg" width="50" className="input_icon"></img>
+            <div className="input_box_wrapper">
+              <input className="input_box"></input>
+              <img src="account-outline.svg" width="45" className="input_icon"></img>
+            </div>
           </div>
           <div className="input_container">
             Email
-            <input className="input_box"></input>
-            <img src="email-outline.svg" width="50"></img>
+            <div className="input_box_wrapper">
+              <input className="input_box"></input>
+              <img src="email-outline.svg" width="45" className="input_icon"></img>
+            </div>
           </div>
           <div className="input_container">
             Password
-            <input className="input_box"></input>
-            <img src="key.svg" width="50"></img>
+            <div className="input_box_wrapper" id="pwd_input_wrapper">
+              <input className="input_box" id="pwd_input_box"></input>
+              <img src="key.svg" width="45" className="input_icon" id="key_icon"></img>
+              <img src="eye.svg" width="45" className="input_icon" id="eye_icon"></img>
+            </div>
           </div>
           <button className="pfp_box">Upload Profile Picture</button>
           <button className="sign_up_box">Sign Up</button>
