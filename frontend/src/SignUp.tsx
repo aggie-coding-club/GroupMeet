@@ -11,21 +11,21 @@ const SignUp = () => {
                     <div className="container">
                     <div className="title"> Sign Up </div>
                     <p>Welcome to GroupMeet! This is a platform for setting meeting times</p>
-                    <div className="input_container">
+                    <div className="flex flex-col mt-[20px]">
                         Name 
                         <div className="input_box_wrapper">
                         <input className="input_box"></input>
                         <img src="account-outline.svg" width="45" className="input_icon"></img>
                         </div>
                     </div>
-                    <div className="input_container">
+                    <div className="flex flex-col mt-[20px]">
                         Email
                         <div className="input_box_wrapper">
                         <input className="input_box"></input>
                         <img src="email-outline.svg" width="45" className="input_icon"></img>
                         </div>
                     </div>
-                    <div className="input_container">
+                    <div className="flex flex-col mt-[20px]">
                         Password
                         <div className="input_box_wrapper" id="pwd_input_wrapper">
                         <input className="input_box" id="pwd_input_box"></input>
