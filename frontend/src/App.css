@@ -45,90 +45,97 @@ button {
   background-color: rgb(255, 252, 252);
   box-shadow: 0px 1px 2px 2px rgb(0 0 0 / 10%);
   border-radius: 20px;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
   max-width: 500px;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
+}
+
+.icon-color {
+  fill: #1DC365;
 }
 
 .input_container {
   display:flex;
   flex-direction: column;
   align-items: start;
+  margin-top: 20px;
 }
 
 .input_icon {
-  margin-left: 10px;
-  margin-bottom: 10px;
-  position: absolute;
-}
-
-.input_icon#key_icon{
-  margin-left: 10px;
-}
-
-#eye_icon {
-  position: relative;
-  margin-left: 0px;
-  right: 50px
+  margin-left: 5px;
+  filter: invert(56%) sepia(92%) saturate(2175%) hue-rotate(158deg) brightness(96%) contrast(86%);
 }
 
 svg{
   color: blue;
 }
 
-.input_box{
+.input_box_wrapper{
   background-color: rgb(233, 233, 233);
-  border: 0;
   padding: 0px 5px;
   font-size: .75em;
   border-radius: 8px;
-  margin: 5px 0px 10px 0px;
+  height: 55px;
   width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+}
+
+
+.input_box{
+  background-color: rgb(233, 233, 233);
+  color: black;
+  border: 0;
+  font-size: 1em;
+  border-radius: 8px;
+  margin: 0px 5px;
+  width: 350px;
   height: 55px;
 }
 
-.input_box_wrapper{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  position: relative;
+.input_box:focus {
+  outline: none; /* Ensure no outline appears when focused */
+  box-shadow: none; /* Optionally remove any box shadow */
 }
-
 
 .pfp_box{
   background-color: rgb(222, 219, 219);
   border: 0;
-  margin: 20px 45px;
+  margin-top: 20px;
   padding: 0px 0px;
   border-radius: 8px;
   width: 250px;
   height: 50px;
-  font-size: .85em;
-  font-weight: 400;
+  font-size: 1.05em;
+  font-weight: 500;
   align-self: flex-start;
 }
 
 .sign_up_box{
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 600;
   text-align: center;
   color: #ffffff;
   background-image: linear-gradient(to right, #12ACE2, #1DC365);
   border: 0;
   margin: 20px 0px;
-  padding: 5px 5px;
   border-radius: 8px;
-  width: 400px;
+  width: 100%;
   height: 45px;
   transition: .3ss;
 }
+
+
 
 p{
   color: #1DC365;

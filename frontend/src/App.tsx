@@ -19,23 +19,23 @@ function App() {
           <div className="input_container">
             Name 
             <div className="input_box_wrapper">
+            <img src="account-outline.svg" width="35" className="input_icon"></img>
               <input className="input_box"></input>
-              <img src="account-outline.svg" width="45" className="input_icon"></img>
             </div>
           </div>
           <div className="input_container">
             Email
             <div className="input_box_wrapper">
+            <img src="email-outline.svg" width="35" className="input_icon"></img>
               <input className="input_box"></input>
-              <img src="email-outline.svg" width="45" className="input_icon"></img>
             </div>
           </div>
           <div className="input_container">
             Password
-            <div className="input_box_wrapper" id="pwd_input_wrapper">
+            <div className="input_box_wrapper">
+              <img src="key.svg" width="35" className="input_icon"></img>
               <input className="input_box" id="pwd_input_box"></input>
-              <img src="key.svg" width="45" className="input_icon" id="key_icon"></img>
-              <img src="eye.svg" width="45" className="input_icon" id="eye_icon"></img>
+              <img src="eye.svg" width="35" className="input_icon" id="eye_icon"></img>
             </div>
           </div>
           <button className="pfp_box">Upload Profile Picture</button>
