@@ -13,33 +13,34 @@ function App() {
   </style>
       <header className="bg-[#ffffff] min-h-screen flex flex-col items-center justify-center text-[calc(10px + 2vmin)] text-[#12ACE2]">
         <img src="GroupMeet.png" width="320"></img>
-        <div id="container" className="bg-[rgb(255,_252,_252)] [box-shadow:0px_1px_2px_2px_rgb(0_0_0_/_10%)] rounded-[20px] pt-[15px] pb-[15px] pl-[50px] pr-[50px] flex flex-col items-center text-[20px] max-w-[500px] font-['Poppins',_'sans-serif'] font-medium not-italic">
+        <div id="container" className="bg-[rgb(255,252,252)] shadow-md rounded-2xl pt-4 pb-4 px-6 sm:px-8 md:px-10 lg:px-12 flex flex-col items-center text-lg sm:text-xl max-w-[500px] w-full min-w-[200px] min-w-0 flex-shrink">
+
           <div id="signup_title" className="font-bold text-[1.8em]"> Sign Up </div>
           <p id="signup_description" className="text-[#1DC365] text-[.8em] mx-[25px] my-[10px]">Welcome to GroupMeet! This is a platform for setting meeting times</p>
-          <div id="container_name" className="flex flex-col mt-[20px] items-start">
+          <div id="container_name" className="flex flex-col mt-[20px] w-full max-w-[400px] items-start">
             Name 
-            <div id="container_name_wrapper" className="bg-[rgb(233,_233,_233)] px-[5px] py-0 text-[.75em] rounded-[8px] h-[55px] w-[400px] flex items-center justify-start">
+            <div id="container_name_wrapper" className="bg-[rgb(233,233,233)] px-2 py-0 text-[0.75em] rounded-lg h-[55px] w-full max-w-[400px] flex items-center justify-start min-w-0 flex-shrink-0 overflow-hidden sm:scale-100">
             <img src="account-outline.svg" width="35" className="input_icon"></img>
-              <input className="input-box bg-[rgb(233,_233,_233)] text-[black] border-[0] text-[1em] rounded-[8px] mx-[5px] my-0 w-[350px] h-[55px]"></input>
+              <input className="input-box bg-[rgb(233,_233,_233)] text-[black] border-[0] outline-none text-[1em] rounded-[8px] mx-[5px] my-0 w-[350px] h-[55px]"></input>
             </div>
           </div>
-          <div id="container_email" className="flex flex-col mt-[20px] items-start">
+          <div id="container_email" className="flex flex-col mt-[20px] items-start w-full max-w-[400px]">
             Email
-            <div id="container_email_wrapper" className="bg-[rgb(233,_233,_233)] px-[5px] py-0 text-[.75em] rounded-[8px] h-[55px] w-[400px] flex items-center justify-start">
+            <div id="container_email_wrapper" className="bg-[rgb(233,233,233)] px-2 py-0 text-[0.75em] rounded-lg h-[55px] w-full max-w-[400px] flex items-center justify-start min-w-0 flex-shrink-0 overflow-hidden sm:scale-100">
             <img src="email-outline.svg" width="35" className="input_icon"></img>
-              <input className="input-box bg-[rgb(233,_233,_233)] text-[black] border-[0] text-[1em] rounded-[8px] mx-[5px] my-0 w-[350px] h-[55px]"></input>
+              <input className="input-box bg-[rgb(233,_233,_233)] text-[black] border-[0] outline-none text-[1em] rounded-[8px] mx-[5px] my-0 w-[350px] h-[55px]"></input>
             </div>
           </div>
-          <div id="container_pwd" className="flex flex-col mt-[20px] items-start">
+          <div id="container_pwd" className="flex flex-col mt-[20px] items-start w-full max-w-[400px]">
             Password
-            <div id="container_pwd_wrapper" className="bg-[rgb(233,_233,_233)] px-[5px] py-0 text-[.75em] rounded-[8px] h-[55px] w-[400px] flex items-center justify-start">
+            <div id="container_pwd_wrapper" className="bg-[rgb(233,233,233)] px-2 py-0 text-[0.75em] rounded-lg h-[55px] w-full max-w-[400px] flex items-center justify-start min-w-0 flex-shrink-0 overflow-hidden sm:scale-100">
               <img src="key.svg" width="35" className="input_icon"></img>
-              <input className="input-box bg-[rgb(233,_233,_233)] text-[black] border-[0] text-[1em] rounded-[8px] mx-[5px] my-0 w-[350px] h-[55px]" id="pwd_input_box"></input>
+              <input className="input-box bg-[rgb(233,_233,_233)] text-[black] border-[0] outline-none text-[1em] rounded-[8px] mx-[5px] my-0 w-[350px] h-[55px]" id="pwd_input_box"></input>
               <img src="eye.svg" width="35" className="input_icon" id="eye_icon"></img>
             </div>
           </div>
-          <button id="pfp_box" className="bg-[rgb(222,_219,_219)] border-[0] mt-[20px] px-[10px] py-0 rounded-[8px] max-w-[250px] h-[50px] text-[1.05em] font-medium self-start">Upload Profile Picture</button>
-          <button id="sign_up_box" className="text-[1em] font-semibold text-center text-[#ffffff] bg-[linear-gradient(to_right,_#12ACE2,_#1DC365)] border-[0] mx-0 my-[20px] rounded-[8px] min-w-full h-[45px] [transition:.3ss]">Sign Up</button>
+          <button id="pfp_box" className="bg-[rgb(222,_219,_219)] border-[0] mx-[5px] mt-[20px] px-[10px] py-0 rounded-[8px] max-w-[250px] h-[50px] text-[1.05em] font-medium self-start">Upload Profile Picture</button>
+          <button id="sign_up_box" className="text-[1em] font-semibold text-center mx-[5px] text-[#ffffff] bg-[linear-gradient(to_right,_#12ACE2,_#1DC365)] border-[0] mx-0 my-[20px] rounded-[8px] min-w-full h-[45px] [transition:.3ss]">Sign Up</button>
         </div>
       </header>
     </div>
