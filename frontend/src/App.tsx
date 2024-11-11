@@ -1,18 +1,17 @@
 import React from 'react';
 import './App.css';
 import Icon from '@mdi/react';
-
-// Importing the images
+import Dashboard from './Dashboard';
 import profilePlaceholder from './Empty_Profile.png';
 import logo from './GroupMeet.webp';
 
 import { mdiPlusBoxOutline } from '@mdi/js';
 import { mdiBellOutline } from '@mdi/js';
 import { mdiMenu } from '@mdi/js';
-
 function App() {
     return (
-        <div className="app-container">
+        <Dashboard />
+        /*<div className="app-container">
 
             <div className="sidebar">
                 <img className="logo" src={logo} alt="Logo" />
@@ -76,6 +75,7 @@ function App() {
                 </div>
             </div>
         </div>
+        */
 
     );
 }
