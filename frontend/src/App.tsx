@@ -34,6 +34,7 @@ const pwdToggle = () => {
       <header className="bg-[#ffffff] min-h-screen flex flex-col items-center justify-center text-[calc(10px + 2vmin)] text-[#12ACE2]">
         <img src="GroupMeet.png" width="320"></img>
         <div id="container" className="bg-[rgb(255,252,252)] shadow-md rounded-2xl pt-4 pb-4 px-6 sm:px-8 md:px-10 lg:px-12 flex flex-col items-center text-lg sm:text-xl max-w-[500px] w-full min-w-[200px] min-w-0 flex-shrink">
+        <form>  
           <div id="signup_title" className="font-bold text-[1.8em]"> Sign Up </div>
           <p id="signup_description" className="text-[#1DC365] text-[.8em] mx-[25px] my-[10px] font-semibold">Welcome to GroupMeet! This is a platform for setting meeting times</p>
           <div id="container_name" className="flex flex-col mt-[20px] w-full max-w-[400px] font-semibold items-start">
@@ -58,8 +59,9 @@ const pwdToggle = () => {
               <img src={eye_icon} width="35" className="input_icon " id="eye_icon" onClick={pwdToggle}></img>
             </div>
           </div>
-          <button id="pfp_box" className="bg-[rgb(222,_219,_219)] border-[0] mx-[5px] mt-[20px] px-[10px] py-0 rounded-[8px] max-w-[250px] h-[50px] text-[1.05em] font-medium self-start">Upload Profile Picture</button>
-          <button id="sign_up_box" className="text-[1em] font-semibold text-center mx-[5px] text-[#ffffff] bg-[linear-gradient(to_right,_#12ACE2,_#1DC365)] border-[0] mx-0 my-[20px] rounded-[8px] min-w-full h-[45px] [transition:.3ss]">Sign Up</button>
+          <button id="pfp_box" type="button" className="bg-[rgb(222,_219,_219)] border-[0] mx-[5px] mt-[20px] px-[10px] py-0 rounded-[8px] max-w-[250px] h-[50px] text-[1.05em] font-medium self-start">Upload Profile Picture</button>
+          <button id="sign_up_box" type="submit" className="text-[1em] font-semibold text-center mx-[5px] text-[#ffffff] bg-[linear-gradient(to_right,_#12ACE2,_#1DC365)] border-[0] mx-0 my-[20px] rounded-[8px] min-w-full h-[45px] [transition:.3ss]">Sign Up</button>
+        </form>
         </div>
       </header>
     </div>
