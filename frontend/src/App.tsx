@@ -24,8 +24,6 @@ const pwdToggle = () => {
   }
 }
 
-//
-
   return (
     <div className="App text-center">
       <style>
@@ -39,23 +37,23 @@ const pwdToggle = () => {
           <div id="container_name" className="flex flex-col mt-[20px] w-full max-w-[400px] font-semibold items-start">
             Name 
             <div id="container_name_wrapper" className="bg-[rgb(233,233,233)] px-2 py-0 text-[0.75em] rounded-lg h-[55px] w-full max-w-[400px] flex items-center justify-start min-w-0 flex-shrink-0 overflow-hidden sm:scale-100">
-            <img src="account-outline.svg" width="35" className="input_icon"></img>
+            <img src="account-outline.svg" width="35" style={{ filter:'invert(56%) sepia(92%) saturate(2175%) hue-rotate(158deg) brightness(96%) contrast(86%)'}} className=""></img>
               <input value={name} onChange={(e) => setName(e.target.value)} className="input-box bg-[rgb(233,_233,_233)] text-[black] border-[0] outline-none text-[1em] rounded-[8px] mx-[5px] my-0 w-[350px] h-[55px]"></input>
             </div>
           </div>
           <div id="container_email" className="flex flex-col mt-[20px] font-semibold items-start w-full max-w-[400px]">
             Email
             <div id="container_email_wrapper" className="bg-[rgb(233,233,233)] px-2 py-0 text-[0.75em] rounded-lg h-[55px] w-full max-w-[400px] flex items-center justify-start min-w-0 flex-shrink-0 overflow-hidden sm:scale-100">
-            <img src="email-outline.svg" width="35" className="input_icon"></img>
+            <img src="email-outline.svg" width="35" style={{ filter:'invert(56%) sepia(92%) saturate(2175%) hue-rotate(158deg) brightness(96%) contrast(86%)'}} className=""></img>
               <input value={email} onChange={(e) => setEmail(e.target.value)} className="input-box bg-[rgb(233,_233,_233)] text-[black] border-[0] outline-none text-[1em] rounded-[8px] mx-[5px] my-0 w-[350px] h-[55px]"></input>
             </div>
           </div>
           <div id="container_pwd" className="flex flex-col mt-[20px] font-semibold items-start w-full max-w-[400px]">
             Password
             <div id="container_pwd_wrapper" className="bg-[rgb(233,233,233)] px-2 py-0 text-[0.75em] rounded-lg h-[55px] w-full max-w-[400px] flex items-center justify-start min-w-0 flex-shrink-0 overflow-hidden sm:scale-100">
-              <img src="key.svg" width="35" className="input_icon"></img>
+              <img src="key.svg" width="35" style={{ filter:'invert(56%) sepia(92%) saturate(2175%) hue-rotate(158deg) brightness(96%) contrast(86%)'}} className=""></img>
               <input value={pwd} onChange={(e) => setPWD(e.target.value)} type={pwdType} className="input-box bg-[rgb(233,_233,_233)] text-[black] border-[0] outline-none text-[1em] rounded-[8px] mx-[5px] my-0 w-[350px] h-[55px]" id="pwd_input_box"></input>
-              <img src={eye_icon} width="35" className="cursor-pointer input_icon " id="eye_icon" onClick={pwdToggle}></img>
+              <img src={eye_icon} width="35" className="cursor-pointer" style={{ filter:'invert(56%) sepia(92%) saturate(2175%) hue-rotate(158deg) brightness(96%) contrast(86%)'}} id="eye_icon" onClick={pwdToggle}></img>
             </div>
           </div>
           <button id="pfp_box" className="cursor-pointer bg-[rgb(222,_219,_219)] border-[0] mx-[5px] mt-[20px] px-[10px] py-0 rounded-[8px] max-w-[250px] h-[50px] text-[1.05em] font-medium self-start">Upload Profile Picture</button>

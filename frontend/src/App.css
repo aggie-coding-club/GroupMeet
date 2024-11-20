@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,42 +10,6 @@
   }
 }
 
-button {
-  all: unset;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.icon-color {
-  fill: #1DC365;
-}
-
-.input_icon {
-  filter: invert(56%) sepia(92%) saturate(2175%) hue-rotate(158deg) brightness(96%) contrast(86%);
-}
-
-svg{
-  color: blue;
-}
-
-
-.input_box{
-  background-color: rgb(233, 233, 233);
-  color: black;
-  border: 0;
-  font-size: 1em;
-  border-radius: 8px;
-  margin: 0px 5px;
-  width: 350px;
-  height: 55px;
-}
-
-.input_box:focus {
-  outline: none; /* Ensure no outline appears when focused */
-  box-shadow: none; /* Optionally remove any box shadow */
-}
 
 @keyframes App-logo-spin {
   from {
@@ -58,8 +18,4 @@ svg{
   to {
     transform: rotate(360deg);
   }
-}
-
-#pwd_input_wrapper{
-  right: -20px;
 }
