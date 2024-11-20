@@ -27,7 +27,6 @@ button {
 }
 
 .input_icon {
-  margin-left: 5px;
   filter: invert(56%) sepia(92%) saturate(2175%) hue-rotate(158deg) brightness(96%) contrast(86%);
 }
 
